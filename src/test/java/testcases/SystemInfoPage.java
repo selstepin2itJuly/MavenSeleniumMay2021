@@ -42,6 +42,7 @@ public class SystemInfoPage {
 
 	@AfterMethod(alwaysRun=true)
 	public void afterMethod() {
+		//quit the browser
 		dr.quit();
 	}
 
