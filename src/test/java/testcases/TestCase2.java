@@ -74,6 +74,7 @@ public class TestCase2 {
 
   @AfterMethod(alwaysRun=true) //post-requisite
   public void afterMethod() {
+	  //quit the browser
 	  dr.quit();
   }
 
