@@ -21,7 +21,7 @@ public class TestCase2 {
 	private WebDriver dr;
 	LoginPage lp;
 	Dashboard dp;
-  @Test(priority=1, description="verify Welcome Msg On Login Page")
+  @Test(priority=3, description="verify Welcome Msg On Login Page")
   public void verifyWelcomeMsgOnLoginPage() {
 	  //lp.loginToApplication(TestDataClass.appUser,TestDataClass.appPassword);
 	  Assert.assertTrue(lp.isDisplayWelcomeMsg());
@@ -36,7 +36,7 @@ public class TestCase2 {
 	  Reporter.log(String.valueOf(dp.isLoginSuccessful()));
   }
   
-  @Test(priority=3, description="verify Login Success With User Remember")
+  @Test(priority=1, description="verify Login Success With User Remember")
   public void verifyLoginSuccessWithUserRemember() {
 	  lp.rememberUser();
 	  lp.loginToApplication(TestDataClass.appUser,TestDataClass.appPassword);
